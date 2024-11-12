@@ -15,7 +15,7 @@ class Proof:
 
     def generate(self) -> ProofResponse:
         """Generate proofs for all input files."""
-        logging.info("Starting proof generation")
+        logging.info("Starting proof generation...")
 
         # Iterate through files and calculate data validity
         account_email = None
