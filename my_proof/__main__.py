@@ -19,7 +19,7 @@ def load_config() -> Dict[str, Any]:
         'dlp_id': 1234,  # Set your own DLP ID here
         'use_sealing': os.path.isdir(SEALED_DIR),
         'input_dir': INPUT_DIR,
-        'user_email': os.environ.get('USER_EMAIL', None),
+        'passcode': os.environ.get('PASSCODE', None),
     }
     logging.info(f"Using config: {json.dumps(config, indent=2)}")
     return config
