@@ -36,7 +36,7 @@ class Proof:
         self.proof_response.uniqueness = 0  # How unique is the data relative to other datasets? (Not implemented here)
 
         # Calculate overall score and validity
-        self.proof_response.valid = self.config['PASSCODE'] == '1234'  # Check if the passcode is correct
+        self.proof_response.valid = self.config['passcode'] == '1234'  # Check if the passcode is correct
         self.proof_response.score = (0.6 * self.proof_response.quality + 0.4 * self.proof_response.ownership) if self.proof_response.valid else 0
 
         # Additional (public) properties to include in the proof about the data
